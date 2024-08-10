@@ -1,0 +1,70 @@
+// XAML snippets for simple elements
+{
+	"XAML label": {
+		"prefix": "label",
+		"body": [
+			"<Label Content=\"$1\" Name=\"$2\" />"
+		],
+		"description": "Label element"
+	},
+	"XAML Button": {
+		"prefix": "button",
+		"body": [
+			"<Button Content=\"$1\" Click=\"$2\" Name=\"$3\" />"
+		],
+		"description": "Button element"
+	},
+	"XAML TextBlock": {
+		"prefix": "textblock",
+		"body": [
+			"<TextBlock Text=\"$1\" Name=\"$2\" />"
+		],
+		"description": "TextBlock element"
+	},
+	"XAML TextBox": {
+		"prefix": "textbox",
+		"body": [
+			"<TextBox Text=\"$1\" Name=\"$2\" />"
+		],
+		"description": "TextBox element"
+	},
+	"XAML StackPanel": {
+		"prefix": "stackpanel",
+		"body": [
+			"<StackPanel Orientation=\"$1\" Margin=\"$2\">",
+			"\t$3",
+			"</StackPanel>"
+		],
+		"description": "StackPanel element"
+	},
+	"XAML Grid": {
+		"prefix": "grid",
+		"body": [
+			"<Grid>",
+			"\t$1",
+			"</Grid>"
+		],
+		"description": "Grid element"
+	},
+	"XAML RowDefinition": {
+		"prefix": "rowdefinition",
+		"body": [
+			"<RowDefinition Height=\"$1\" />"
+		],
+		"description": "RowDefinition element"
+	},
+	"XAML ColumnDefinition": {
+		"prefix": "columndefinition",
+		"body": [
+			"<ColumnDefinition Width=\"$1\" />"
+		],
+		"description": "ColumnDefinition element"
+	},
+	"XAML Image": {
+		"prefix": "image",
+		"body": [
+			"<Image Source=\"$1\" Name=\"$2\" />"
+		],
+		"description": "Image element"
+	},
+}

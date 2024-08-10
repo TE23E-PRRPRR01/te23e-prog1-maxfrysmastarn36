@@ -1,0 +1,12 @@
+{
+    "XAML event": {
+		"prefix": "event",
+		"body": [
+			"private void $1(object sender, RoutedEventArgs e)",
+			"{",
+			"\t$2",
+			"}"
+		],
+		"description": "Metod för att fånga event från XAML"
+	}
+}
