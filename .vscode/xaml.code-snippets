@@ -1,30 +1,30 @@
-// XAML snippets for simple elements
+// XAML snippets for simple elements in WPF
 {
 	"XAML label": {
 		"prefix": "label",
 		"body": [
-			"<Label Content=\"$1\" Name=\"$2\" />"
+			"<Label Name=\"$1\">$2</Label>"
 		],
 		"description": "Label element"
 	},
 	"XAML Button": {
 		"prefix": "button",
 		"body": [
-			"<Button Content=\"$1\" Click=\"$2\" Name=\"$3\" />"
+			"<Button Click=\"$1\" Name=\"$2\">$3</Button>"
 		],
 		"description": "Button element"
 	},
 	"XAML TextBlock": {
 		"prefix": "textblock",
 		"body": [
-			"<TextBlock Text=\"$1\" Name=\"$2\" />"
+			"<TextBlock Name=\"$1\">$2</TextBlock>"
 		],
 		"description": "TextBlock element"
 	},
 	"XAML TextBox": {
 		"prefix": "textbox",
 		"body": [
-			"<TextBox Text=\"$1\" Name=\"$2\" />"
+			"<TextBox Name=\"$1\">$2</TextBox>"
 		],
 		"description": "TextBox element"
 	},
@@ -40,8 +40,8 @@
 	"XAML Grid": {
 		"prefix": "grid",
 		"body": [
-			"<Grid>",
-			"\t$1",
+			"<Grid Margin=\"$1\">",
+			"\t$2",
 			"</Grid>"
 		],
 		"description": "Grid element"
