@@ -1,22 +1,25 @@
 # C# i Visual Studio Code
-VS Code är ett snabbt och lättanvänt IDE som du kan skapa ditt C#-projekt med.
+VS Code är ett snabbt och lättanvänt IDE för att skapa C#-projekt. Det är enkelt att komma igång och det finns många tillägg som gör det enklare att skapa och underhålla projekt.
 
-## Förberedelser
+## Installera git och Dotnet 7
 
-### Installera git och Dotnet 7
-Gå till följande webbsidor och ladda ner och installera följande program:
+För att kunna använda Visual Studio Code för att skapa C#-projekt behöver du installera **git** och **Dotnet 7**.
 
-1. Installera [git](https://git-scm.com/downloads)
-2. Installera [Dotnet 7](https://dotnet.microsoft.com/en-us/download/dotnet/thank-you/sdk-7.0.400-windows-x64-installer)
-
-Eller kör följande kommandon i Windows Terminal:
+> Kör följande kommandon i **Windows Powershell**:
 
 ```Powershell
 winget install git.git
 winget install Microsoft.DotNet.SDK.7
 ```
 
-### Installera följande tillägg i VS Code
+Eller gå till följande webbsidor och ladda ner och installera följande mjukvaror:
+
+1. [git](https://git-scm.com/downloads)
+2. [Dotnet 7](https://dotnet.microsoft.com/en-us/download/dotnet/thank-you/sdk-7.0.400-windows-x64-installer)
+
+## Installera tillägg i VS Code
+
+Med tillägg i VS Code förenklas arbetet med att skapa och underhålla projekt.  
 Följande tillägg kommer att installeras automatiskt:
 
 * [C#](https://marketplace.visualstudio.com/items?itemName=ms-dotnettools.csharp) – Ger VS Code stöd för C#
@@ -29,14 +32,14 @@ Följande tillägg kommer att installeras automatiskt:
 * [GitHub Classroom](https://marketplace.visualstudio.com/items?itemName=GitHub.classroom) - För att arbeta med labbar och prov på Github Classroom
 * [C# XML Documentation Comments](https://marketplace.visualstudio.com/items?itemName=k--kato.docomment) - För att kommentera metoder och klasser
 
-### Ställ in VS Code inställningar från profil
+## Ställ in VS Code från profil-fil
 För att få en bra och fungerande utvecklingsmiljö i VS Code, behöver VS Code inställningar ställas in. Detta görs genom att importera en profil.
 
 > Gå in i inställningar och välj **Profile** -> **Import profile** och välj filen *.vscode/Skola.code-profile*.
 
-### Korta ned prompt i Powershell
+## Korta ned prompten i Powershell
 
-I terminalen i *VS Code* är prompten väldigt lång.  
+I terminalen i *VS Code* är prompten väldigt lång och gör det svårt att få en överblick.  
 Gör följande för att korta ned prompten i Terminalen/Konsolen i *VS Code*.
 
 > 1. Öppna terminalen och skriv/kör dessa rader för skapa en **profil**-fil:
@@ -66,17 +69,3 @@ Set-ExecutionPolicy RemoteSigned -Scope CurrentUser
 
 Referens: [How to display ony the current folder name](https://superuser.com/questions/446827/configure-windows-powershell-to-display-only-the-current-folder-name-in-the-shel).
 
-## Skapa C#-projekt
-
-1. Skapa en ny mapp
-2. Öppna den tomma mappen i VS Code med **File** -> **Open In Terminal**
-3. Skapa grundkoden med:
-
-```bash
-dotnet new console
-```
-4. Koda och testa med:
-
-```bash
-dotnet run
-```
