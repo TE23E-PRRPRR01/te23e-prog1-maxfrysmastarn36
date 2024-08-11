@@ -3,12 +3,21 @@ VS Code är ett snabbt och lättanvänt IDE som du kan skapa ditt C#-projekt med
 
 ## Förberedelser
 
-### Installera och ställ in VS Code
+### Installera git och Dotnet 7
+Gå till följande webbsidor och ladda ner och installera följande program:
 
 1. Installera [git](https://git-scm.com/downloads)
 2. Installera [Dotnet 7](https://dotnet.microsoft.com/en-us/download/dotnet/thank-you/sdk-7.0.400-windows-x64-installer)
 
+Eller kör följande kommandon i Windows Terminal:
+
+```Powershell
+winget install git.git
+winget install Microsoft.DotNet.SDK.7
+```
+
 ### Installera följande tillägg i VS Code
+Följande tillägg kommer att installeras automatiskt:
 
 * [C#](https://marketplace.visualstudio.com/items?itemName=ms-dotnettools.csharp) – Ger VS Code stöd för C#
 * [C# Toolbox of Productivity](https://marketplace.visualstudio.com/items?itemName=RichardZampieriprog.csharp-snippet-productivity) – Lägger till en del extra användbara genvägar och funktioner, tex för att skapa nya projekt och klasser
@@ -20,12 +29,14 @@ VS Code är ett snabbt och lättanvänt IDE som du kan skapa ditt C#-projekt med
 * [GitHub Classroom](https://marketplace.visualstudio.com/items?itemName=GitHub.classroom) - För att arbeta med labbar och prov på Github Classroom
 * [C# XML Documentation Comments](https://marketplace.visualstudio.com/items?itemName=k--kato.docomment) - För att kommentera metoder och klasser
 
+### VS Code inställningar från profil
+Gå in i inställningar och välj **Profile** -> **Import profile** och välj filen *.vscode/Skola.code-profile*.
+
 ## Skapa C#-projekt
 
 1. Skapa en ny mapp
-2. Öppna den tomma mappen i VS Code
-3. Öppna en ny terminal (ctrl + ö)
-4. Skapa grundkoden med:
+2. Öppna den tomma mappen i VS Code med **File** -> **Open In Terminal**
+3. Skapa grundkoden med:
 
 ```bash
 dotnet new console
