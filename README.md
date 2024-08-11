@@ -1,10 +1,28 @@
-# C# i Visual Studio Code
-VS Code är ett snabbt och lättanvänt IDE för att skapa C#-projekt. Det är enkelt att komma igång och det finns många tillägg som gör det enklare att skapa och underhålla projekt.
+---
+description: Installera alla verktyg, konfigurera alla inställningar, skapar alla mappar
+---
+
+# Utvecklingsmiljön
+
+## Intro till *VS Code*
+*VS Code* är en fantastisk editor som är gratis och som fungerar på alla plattformar.
+Här är en genomgång av *VS Code*:
+
+{% embed url="https://www.youtube.com/watch?v=B-s71n0dHUk&list=PLj6YeMhvp2S5UgiQnBfvD7XgOMKs3O_G6" %}
+
+## Komma igång med github
+Ett bra komplement till *VS Code* är *Github*. Att programmera utan att använda versionshantering är som att köra bil utan att använda säkerhetsbälte.\
+Github är en tjänst för att lagra och dela kod. Du kommer att använda github för att lagra dina projekt och för att lämna in labbar och prov.
+
+* Skapa ett konto på [https://github.com](https://github.com)
+  * Döp kontot till: **klass-förnamn-efternamn**
+  * Valfritt lösenord
+  * Använd din skolmail
 
 ## Installera git och Dotnet 7
 För att kunna använda Visual Studio Code för att skapa C#-projekt behöver du installera **git** och **Dotnet 7**.
 
-> Kör följande kommandon i **Windows Powershell**:
+> Öppna **Windows Powershell** och *skriv/kör* följande kommandon:
 
 ```Powershell
 winget install git.git
@@ -34,11 +52,11 @@ För att få en bra och fungerande utvecklingsmiljö i VS Code, behöver VS Code
 
 > Gå in i inställningar och välj **Profile** -> **Import profile** och välj filen *.vscode/Prog.code-profile*.
 
-## Korta ned prompten i Powershell
+## Korta ned prompten i terminalen
 I terminalen i *VS Code* är prompten väldigt lång och gör det svårt att få en överblick.  
 Gör följande för att korta ned prompten i Terminalen/Konsolen i *VS Code*.
 
-> 1. Öppna terminalen och **skriv/kör** dessa rader:
+> Öppna **terminalen** och *skriv/kör* dessa rader:
 
 ```powershell
 test-path $profile
@@ -46,7 +64,7 @@ new-item -path $profile -itemtype file -force
 code $profile
 ```
 
-> 2. Skriv in följande i **fönstret** och spara:
+> *Skriv in* följande i **fönstret** och *spara*:
 
 ```powershell
 function prompt {
@@ -55,12 +73,12 @@ function prompt {
 }
 ```
 
-> 3. Avslutningsvis, i terminalen **skriv/kör**:
+> I **terminalen** *skriv/kör*:
 
 ```powershell
 Set-ExecutionPolicy RemoteSigned -Scope CurrentUser
 ```
 
-> 4. Starta om *VS Code*
+> **Starta om** *VS Code*
 
 Referens: [How to display ony the current folder name](https://superuser.com/questions/446827/configure-windows-powershell-to-display-only-the-current-folder-name-in-the-shel).
