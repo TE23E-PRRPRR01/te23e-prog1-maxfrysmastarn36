@@ -31,14 +31,15 @@ Följande tillägg kommer att installeras automatiskt:
 
 ### Ställ in VS Code inställningar från profil
 För att få en bra och fungerande utvecklingsmiljö i VS Code, behöver VS Code inställningar ställas in. Detta görs genom att importera en profil.
-Gå in i inställningar och välj **Profile** -> **Import profile** och välj filen *.vscode/Skola.code-profile*.
+
+> Gå in i inställningar och välj **Profile** -> **Import profile** och välj filen *.vscode/Skola.code-profile*.
 
 ### Korta ned prompt i Powershell
 
 I terminalen i *VS Code* är prompten väldigt lång.  
 Gör följande för att korta ned prompten i Terminalen/Konsolen i *VS Code*.
 
-* Öppna terminalen och skriv/kör dessa rader för skapa en **profil**-fil:
+> 1. Öppna terminalen och skriv/kör dessa rader för skapa en **profil**-fil:
 
 ```powershell
 test-path $profile
@@ -46,7 +47,7 @@ new-item -path $profile -itemtype file -force
 code $profile
 ```
 
-* Skriv in följande i **profil**-filen och spara:
+> 2. Skriv in följande i **profil**-filen och spara:
 
 ```powershell
 function prompt {
@@ -55,13 +56,13 @@ function prompt {
 }
 ```
 
-* Avslutningsvis, i terminalen skriv/kör:
+> 3. Avslutningsvis, i terminalen skriv/kör:
 
 ```powershell
 Set-ExecutionPolicy RemoteSigned -Scope CurrentUser
 ```
 
-* Starta om *VS Code*
+> 4. Starta om *VS Code*
 
 Referens: [How to display ony the current folder name](https://superuser.com/questions/446827/configure-windows-powershell-to-display-only-the-current-folder-name-in-the-shel).
 
@@ -79,9 +80,3 @@ dotnet new console
 ```bash
 dotnet run
 ```
-
-## Ladda upp till GitHub
-
-1. Tryck på ikonen för Source Control
-2. Fyll i en commit meddelande som beskriver vad du har gjort
-3. Tryck på **Commit & Sync**
