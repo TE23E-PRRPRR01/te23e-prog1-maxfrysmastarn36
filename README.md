@@ -1,7 +1,3 @@
----
-description: Installera alla verktyg, konfigurera alla inställningar, skapar alla mappar
----
-
 # Utvecklingsmiljön
 
 ## Intro till *VS Code*
