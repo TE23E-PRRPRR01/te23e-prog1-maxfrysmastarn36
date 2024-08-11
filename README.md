@@ -4,7 +4,7 @@
 *VS Code* är en fantastisk editor som är gratis och som fungerar på alla plattformar.
 Här är en genomgång av *VS Code*:
 
-{% embed url="https://www.youtube.com/watch?v=B-s71n0dHUk&list=PLj6YeMhvp2S5UgiQnBfvD7XgOMKs3O_G6" %}
+https://www.youtube.com/watch?v=B-s71n0dHUk&list=PLj6YeMhvp2S5UgiQnBfvD7XgOMKs3O_G6"
 
 ## Komma igång med github
 Ett bra komplement till *VS Code* är *Github*. Att programmera utan att använda versionshantering är som att köra bil utan att använda säkerhetsbälte.\
