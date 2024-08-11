@@ -42,7 +42,7 @@ För att få en bra och fungerande utvecklingsmiljö i VS Code, behöver VS Code
 I terminalen i *VS Code* är prompten väldigt lång och gör det svårt att få en överblick.  
 Gör följande för att korta ned prompten i Terminalen/Konsolen i *VS Code*.
 
-> 1. Öppna terminalen och skriv/kör dessa rader för skapa en **profil**-fil:
+> 1. Öppna terminalen och **skriv/kör** dessa rader:
 
 ```powershell
 test-path $profile
@@ -50,7 +50,7 @@ new-item -path $profile -itemtype file -force
 code $profile
 ```
 
-> 2. Skriv in följande i **profil**-filen och spara:
+> 2. Skriv in följande i **fönstret** och spara:
 
 ```powershell
 function prompt {
@@ -59,7 +59,7 @@ function prompt {
 }
 ```
 
-> 3. Avslutningsvis, i terminalen skriv/kör:
+> 3. Avslutningsvis, i terminalen **skriv/kör**:
 
 ```powershell
 Set-ExecutionPolicy RemoteSigned -Scope CurrentUser
@@ -68,4 +68,3 @@ Set-ExecutionPolicy RemoteSigned -Scope CurrentUser
 > 4. Starta om *VS Code*
 
 Referens: [How to display ony the current folder name](https://superuser.com/questions/446827/configure-windows-powershell-to-display-only-the-current-folder-name-in-the-shel).
-
