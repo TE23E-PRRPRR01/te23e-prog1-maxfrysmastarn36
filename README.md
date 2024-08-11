@@ -2,7 +2,6 @@
 VS Code är ett snabbt och lättanvänt IDE för att skapa C#-projekt. Det är enkelt att komma igång och det finns många tillägg som gör det enklare att skapa och underhålla projekt.
 
 ## Installera git och Dotnet 7
-
 För att kunna använda Visual Studio Code för att skapa C#-projekt behöver du installera **git** och **Dotnet 7**.
 
 > Kör följande kommandon i **Windows Powershell**:
@@ -18,7 +17,6 @@ Eller gå till följande webbsidor och ladda ner och installera följande mjukva
 2. [Dotnet 7](https://dotnet.microsoft.com/en-us/download/dotnet/thank-you/sdk-7.0.400-windows-x64-installer)
 
 ## Installera tillägg i VS Code
-
 Med tillägg i VS Code förenklas arbetet med att skapa och underhålla projekt.  
 Följande tillägg kommer att installeras automatiskt:
 
@@ -38,7 +36,6 @@ För att få en bra och fungerande utvecklingsmiljö i VS Code, behöver VS Code
 > Gå in i inställningar och välj **Profile** -> **Import profile** och välj filen *.vscode/Skola.code-profile*.
 
 ## Korta ned prompten i Powershell
-
 I terminalen i *VS Code* är prompten väldigt lång och gör det svårt att få en överblick.  
 Gör följande för att korta ned prompten i Terminalen/Konsolen i *VS Code*.
 
