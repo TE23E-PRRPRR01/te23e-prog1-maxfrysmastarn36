@@ -29,8 +29,41 @@ Följande tillägg kommer att installeras automatiskt:
 * [GitHub Classroom](https://marketplace.visualstudio.com/items?itemName=GitHub.classroom) - För att arbeta med labbar och prov på Github Classroom
 * [C# XML Documentation Comments](https://marketplace.visualstudio.com/items?itemName=k--kato.docomment) - För att kommentera metoder och klasser
 
-### VS Code inställningar från profil
+### Ställ in VS Code inställningar från profil
+För att få en bra och fungerande utvecklingsmiljö i VS Code, behöver VS Code inställningar ställas in. Detta görs genom att importera en profil.
 Gå in i inställningar och välj **Profile** -> **Import profile** och välj filen *.vscode/Skola.code-profile*.
+
+### Korta ned prompt i Powershell
+
+I terminalen i *VS Code* är prompten väldigt lång.  
+Gör följande för att korta ned prompten i Terminalen/Konsolen i *VS Code*.
+
+* Öppna terminalen och skriv/kör dessa rader för skapa en **profil**-fil:
+
+```powershell
+test-path $profile
+new-item -path $profile -itemtype file -force
+code $profile
+```
+
+* Skriv in följande i **profil**-filen och spara:
+
+```powershell
+function prompt {
+   $p = Split-Path -leaf -path (Get-Location)
+   "$p> "
+}
+```
+
+* Avslutningsvis, i terminalen skriv/kör:
+
+```powershell
+Set-ExecutionPolicy RemoteSigned -Scope CurrentUser
+```
+
+* Starta om *VS Code*
+
+Referens: [How to display ony the current folder name](https://superuser.com/questions/446827/configure-windows-powershell-to-display-only-the-current-folder-name-in-the-shel).
 
 ## Skapa C#-projekt
 
