@@ -32,7 +32,7 @@ Följande tillägg kommer att installeras automatiskt:
 ## Ställ in VS Code från profil-fil
 För att få en bra och fungerande utvecklingsmiljö i VS Code, behöver VS Code inställningar ställas in. Detta görs genom att importera en profil.
 
-> Gå in i inställningar och välj **Profile** -> **Import profile** och välj filen *.vscode/Skola.code-profile*.
+> Gå in i inställningar och välj **Profile** -> **Import profile** och välj filen *.vscode/Prog.code-profile*.
 
 ## Korta ned prompten i Powershell
 I terminalen i *VS Code* är prompten väldigt lång och gör det svårt att få en överblick.  
