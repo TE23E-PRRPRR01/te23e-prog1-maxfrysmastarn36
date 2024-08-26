@@ -1,10 +1,10 @@
 {
-    "workbench.colorTheme": "Default Light+",
+    //"workbench.colorTheme": "Casseopeian Light Pink",
     "workbench.iconTheme": "vscode-great-icons",
     "workbench.colorCustomizations": {
-        "activityBar.background": "#3B1D61",
-        "titleBar.activeBackground": "#532888",
-        "titleBar.activeForeground": "#FBF9FD"
+        "activityBar.background": "#ff00f2",
+        "titleBar.activeBackground": "#ff00d9",
+        "titleBar.activeForeground": "#8000ff"
     },
     "workbench.editorAssociations": {
         "*.md": "vscode.markdown.preview.editor"
@@ -31,7 +31,7 @@
     "git.autofetch": true,
     "csharp.suppressBuildAssetsNotification": true,
     "csharp.debug.console": "externalTerminal",
-    "csharp.referencesCodeLens.enabled": false,
-    "redhat.telemetry.enabled": false
+    "redhat.telemetry.enabled": false,
     "sessionlogger.enabled": false,
+    "dotnet.codeLens.enableReferencesCodeLens": false,
 }
