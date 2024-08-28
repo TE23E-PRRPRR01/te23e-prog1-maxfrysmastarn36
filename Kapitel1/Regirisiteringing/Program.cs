@@ -8,3 +8,8 @@ string k = Console.ReadLine();
 Console.WriteLine("Efternamn?");
 string efter = Console.ReadLine();
 Console.WriteLine($"Tjena mr sigma också känd som {k} {efter}");
+
+if (efter == "Lundström")
+{
+    Console.WriteLine("Sigma sigma on the wall");
+}
